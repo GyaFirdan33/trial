@@ -13,7 +13,7 @@ jobs:
     - name: Extract ngrok
       run: Expand-Archive .\ngrok-v3-stable-windows-amd64.zip -DestinationPath .\
     - name: Authenticate with ngrok
-      run: ngrok authtoken NGROK_AUTHTOKEN
+      run: ngrok authtoken 1UMX6REcHxLKstXsNG8VDfZFV7w_3BKaRL83tFQvPHbrkYQjy
     - name: Enable Remote Desktop
       run: |
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
